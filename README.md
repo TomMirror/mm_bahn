@@ -18,20 +18,20 @@ After building my own mirror I've realized that there is no module available to 
 I'm not so familiar with this programming language but after checking the code of other modules I've decided to write my own extension module for the MagicMirror2 project by MichMich.
 Please feel free to contact me in case you have questions, comments or improvements.
 
-## Description
+# Description
 The departure monitor displays all trains for a given station with direct connection to the destination. It is necessary to specify the station ID to define the departure station. To define the destination of trains you must specify this as searchstring. The module will not display all departures of a station, only the departures for the given final destinations.
 
-## Version:
+# Version:
 v1.0.0: First Release
 
-## Note:
+# Note:
 Translation
 This module is available in German (de).
 
-## Dependencies
+# Dependencies
 •	At work….
 
-## Installation of the module
+# Installation of the module
 As similar to other modules:
 - Navigate into your MagicMirror/modules folder
 - git clone 'https://github.com/TomMirror/mm_bahn.git'
@@ -69,15 +69,10 @@ As similar to other modules:
 An apiKey has to be requested at https://developer.deutschebahn.com/store/
 
 # Config Options
-Option	Default	Description
-stationId	8000207	
-Choose your departure station
-default value: '8000207' – Köln Hbf'
-Zielbahnhof	Siegburg/Bonn'	The destination to search
-updateInterval
-optional	'60000'	
-Update interval in milliseconds 
-default: Once per minute
+- Option  	Default	    Description
+- EvaId	    '8000207'	    default value: '8000207' – Köln Hbf'
+- Zielbahnhof	"Siegburg/Bonn"	The destination to search
+- updateInterval '60000'	Update interval in milliseconds
 Screenshots
   
 Licence
