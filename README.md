@@ -33,17 +33,17 @@ This module is available in German (de).
 
 ## Installation of the module
 As similar to other modules:
-•	Navigate into your MagicMirror/modules folder
-•	git clone 'https://github.com/TomMirror/mm_bahn.git'
-•	Navigate into MagicMirror/modules/mm_bahn
-•	Execute npm intall
+- Navigate into your MagicMirror/modules folder
+- git clone 'https://github.com/TomMirror/mm_bahn.git'
+- Navigate into MagicMirror/modules/mm_bahn
+- Execute npm intall
 
 # Note
-•	If there is an error during data retrieving process it will be shown in the console
+- If there is an error during data retrieving process it will be shown in the console
 
 # Configuration
 1.	minimum configuration within config.js:
-...
+```
 {
     module: 'mm_bahn',
     position: 'top_right',
@@ -52,10 +52,10 @@ As similar to other modules:
             updateInterval:  60000
     }
 }
-...
+````
 
 2.	Configuration within mm_bahn.js:
-...
+```
 {
 …
     BAHN_API_KEY: "Bearer YOUR_APIKEY", //"Bearer +ApiKey"
@@ -63,7 +63,7 @@ As similar to other modules:
     Zielbahnhof: "Siegburg/Bonn",       // Searchstring
 …
 }
-...
+```
 
 # Station ID and apiKey
 An apiKey has to be requested at https://developer.deutschebahn.com/store/
