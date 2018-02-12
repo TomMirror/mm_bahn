@@ -1,0 +1,36 @@
+.Abfahrt .Id {
+  padding-left: 0;
+  padding-right: 25px;
+}
+
+.Abfahrt .GleisGeplant {
+  padding-left: 0;
+  padding-right: 25px;
+}
+
+.Abfahrt .AbfahrtGeplant {
+  padding-left: 0;
+  padding-right: 25px;
+}
+
+.Abfahrt .Uhrzeit {
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.Abfahrt .Typ {
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.Abfahrt .Nummer {
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.Abfahrt tr.colored .cancel {
+    color: #FF8E99;
+}
+
+
+

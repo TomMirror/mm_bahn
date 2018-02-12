@@ -1,0 +1,13 @@
+{
+  "name": "mm_bahn",
+  "version": "1.0.0",
+  "main": "mm_bahn.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tom_BSW@t-online.de",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {},
+  "description": ""
+}
