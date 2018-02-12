@@ -7,8 +7,8 @@ After building my own mirror I've realized that there is no module available to 
 I'm not so familiar with this programming language but after checking the code of other modules I've decided to write my own extension module for the MagicMirror2 project by MichMich.
 Please feel free to contact me in case you have questions, comments or improvements.
 
-I?ve programmed a module (in poorely code) which shows direct relations between two german cities.
-The ressource is based on a ct? project shown at:
+Í've programmed a module (in poorely code) which shows direct relations between two german cities.
+The ressource is based on a ct' project shown at:
 
 https://www.heise.de/ct/ausgabe/2017-21-Echtzeitdaten-der-Deutschen-Bahn-auslesen-und-verarbeiten-3837602.html#p_2
 
@@ -32,7 +32,7 @@ Translation
 This module is available in German (de).
 
 ## Dependencies
-?	At work?.
+- 	At work.
 
 ## Installation of the module
 As similar to other modules:
