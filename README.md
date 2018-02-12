@@ -1,90 +1,42 @@
-# mm_bahn
-## DB OpenData Directrelations - Monitor
+Browser-friendly inheritance fully compatible with standard node.js
+[inherits](http://nodejs.org/api/util.html#util_util_inherits_constructor_superconstructor).
 
-**(SORRY FOR MY BAD ENGLISH)**
+This package exports standard `inherits` from node.js `util` module in
+node environment, but also provides alternative browser-friendly
+implementation through [browser
+field](https://gist.github.com/shtylman/4339901). Alternative
+implementation is a literal copy of standard one located in standalone
+module to avoid requiring of `util`. It also has a shim for old
+browsers with no `Object.create` support.
 
-After building my own mirror I've realized that there is no module available to display direct relations for DB supported trains.
-I'm not so familiar with this programming language but after checking the code of other modules I've decided to write my own extension module for the MagicMirror2 project by MichMich.
-Please feel free to contact me in case you have questions, comments or improvements.
+While keeping you sure you are using standard `inherits`
+implementation in node.js environment, it allows bundlers such as
+[browserify](https://github.com/substack/node-browserify) to not
+include full `util` package to your client code if all you need is
+just `inherits` function. It worth, because browser shim for `util`
+package is large and `inherits` is often the single function you need
+from it.
 
-I’ve programmed a module (in poorely code) which shows direct relations between two german cities.
-The ressource is based on a ct’ project shown at:
+It's recommended to use this package instead of
+`require('util').inherits` for any code that has chances to be used
+not only in node.js but in browser too.
 
-https://www.heise.de/ct/ausgabe/2017-21-Echtzeitdaten-der-Deutschen-Bahn-auslesen-und-verarbeiten-3837602.html#p_2
+## usage
 
-and
-
-https://github.com/jamct/phpbahn
-
-To receive data you must register at: https://developer.deutschebahn.com/store/
-
-And follow the steps shown at the ct' article
-
-
-## Description
-The departure monitor displays all trains for a given station with direct connection to the destination. It is necessary to specify the station ID to define the departure station. To define the destination of trains you must specify this as searchstring. The module will not display all departures of a station, only the departures for the given final destinations.
-
-## Version:
-v1.0.0: First Release
-
-## Note:
-Translation
-This module is available in German (de).
-
-## Dependencies
-•	At work….
-
-## Installation of the module
-As similar to other modules:
-- Navigate into your MagicMirror/modules folder
-- git clone 'https://github.com/TomMirror/mm_bahn.git'
-- Navigate into MagicMirror/modules/mm_bahn
-- Execute npm intall
-
-## Note
-- If there is an error during data retrieving process it will be shown in the console
-
-## Configuration
-1.	minimum configuration within config.js:
-```
-{
-    module: 'mm_bahn',
-    position: 'top_right',
-    header: 'Bahnverbindung Köln - Siegburg',	
-    config: {
-            updateInterval:  60000
-    }
-}
-````
-
-2.	Configuration within mm_bahn.js:
-```
-{
-…
-    BAHN_API_KEY: "Bearer YOUR_APIKEY", //"Bearer +ApiKey"
-    Abfahrtbahnhof: 8000207,            // API evaid KÖLN HBF      
-    Zielbahnhof: "Siegburg/Bonn",       // Searchstring
-…
-}
+```js
+var inherits = require('inherits');
+// then use exactly as the standard one
 ```
 
-## Station ID and apiKey
-An apiKey has to be requested at https://developer.deutschebahn.com/store/
+## note on version ~1.0
 
-## Config Options
-Option | Default | Description
--------|---------|------------
-Abfahrtbahnhof | 8000207 | default value of evaId: 8000207 – Köln Hbf (see DB API at ct' article)
-Zielbahnhof | "Siegburg/Bonn" |	The destination to search as String
-updateInterval | optional '60000' |	Update interval in milliseconds
+Version ~1.0 had completely different motivation and is not compatible
+neither with 2.0 nor with standard node.js `inherits`.
 
-## Screenshots
-  
-## Licence
-MIT License
-Copyright (c) 2018 TomMirror  (https://github.com/TomMirror/)
+If you are using version ~1.0 and planning to switch to ~2.0, be
+careful:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+* new version uses `super_` instead of `super` for referencing
+  superclass
+* new version overwrites current prototype while old one preserves any
+  existing fields on it
