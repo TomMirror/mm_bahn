@@ -1,15 +1,11 @@
 # mm_bahn
 MagicMirror modul for DB directrelations using DB-API
-
 (SORRY FOR MY BAD ENGLISH)
-
 I’ve programmed a module (in poorely code) which shows direct relations between two german cities.
 The ressource is based on a ct’ project shown at:
 
 https://www.heise.de/ct/ausgabe/2017-21-Echtzeitdaten-der-Deutschen-Bahn-auslesen-und-verarbeiten-3837602.html#p_2
-
 and
-
 https://github.com/jamct/phpbahn
 
 To receive data you must register at: https://developer.deutschebahn.com/store/
@@ -17,28 +13,35 @@ To receive data you must register at: https://developer.deutschebahn.com/store/
 And follow the steps shown at the ct' article
 
 mm_bahn
-DB OpenData Directrelations - Monitor
+# DB OpenData Directrelations - Monitor
 After building my own mirror I've realized that there is no module available to display direct relations for DB supported trains.
 I'm not so familiar with this programming language but after checking the code of other modules I've decided to write my own extension module for the MagicMirror2 project by MichMich.
 Please feel free to contact me in case you have questions, comments or improvements.
-Description
+
+## Description
 The departure monitor displays all trains for a given station with direct connection to the destination. It is necessary to specify the station ID to define the departure station. To define the destination of trains you must specify this as searchstring. The module will not display all departures of a station, only the departures for the given final destinations.
-Version:
+
+## Version:
 v1.0.0: First Release
-Note:
+
+## Note:
 Translation
 This module is available in German (de).
-Dependencies
+
+## Dependencies
 •	At work….
-Installation of the module
+
+## Installation of the module
 As similar to other modules:
 •	Navigate into your MagicMirror/modules folder
 •	git clone 'https://github.com/TomMirror/mm_bahn.git'
 •	Navigate into MagicMirror/modules/mm_bahn
 •	Execute npm intall
-Note
+
+# Note
 •	If there is an error during data retrieving process it will be shown in the console
-Configuration
+
+# Configuration
 1.	minimum configuration within config.js:
 ...
 {
@@ -50,7 +53,8 @@ Configuration
     }
 }
 ...
-2.	Configuration including optional parameters within mm_bahn.js:
+
+2.	Configuration within mm_bahn.js:
 ...
 {
 …
@@ -60,9 +64,11 @@ Configuration
 …
 }
 ...
-Station ID and apiKey
+
+# Station ID and apiKey
 An apiKey has to be requested at https://developer.deutschebahn.com/store/
-Config Options
+
+# Config Options
 Option	Default	Description
 stationId	8000207	
 Choose your departure station
