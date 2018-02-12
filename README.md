@@ -74,7 +74,7 @@ An apiKey has to be requested at https://developer.deutschebahn.com/store/
 ## Config Options
 Option | Default | Description
 -------|---------|------------
-EvaId | '8000207' | default value: '8000207' – Köln Hbf'
+Abfahrtbahnhof | 8000207 | default value of evaId: 8000207 – Köln Hbf (see DB API at ct' article)
 Zielbahnhof | "Siegburg/Bonn" |	The destination to search as String
 updateInterval | optional '60000' |	Update interval in milliseconds
 
