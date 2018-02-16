@@ -41,7 +41,10 @@ As similar to other modules:
 - Navigate into your MagicMirror/modules folder
 - git clone 'https://github.com/TomMirror/mm_bahn.git'
 - Navigate into MagicMirror/modules/mm_bahn
-- Execute npm intall
+- unzip the archive node_modules.zip to ./node_modules (esp. sudo unzip node_modules.zip -d ./node_modules)
+- the files of node_modules.zip must be at: your_path_to_MM/modules/mm_bahn/node_modules/*.*
+- Execute npm intall mm_bahn
+- set your API-KEY at mm_bahn.js
 
 ## Note
 - If there is an error during data retrieving process it will be shown in the console
