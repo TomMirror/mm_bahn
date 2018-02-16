@@ -1,6 +1,7 @@
-/* Module */
-
 /* Magic Mirror
+ *
+ * By Michael Teeuw http://michaelteeuw.nl
+ * MIT Licensed.
  * Module: mm_bahn
  *
  * By Tom 
