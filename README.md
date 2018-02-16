@@ -1,5 +1,3 @@
-# **UNDER CONSTRUCTION**
-
 # mm_bahn
 ## DB OpenData Directrelations - Monitor
 
