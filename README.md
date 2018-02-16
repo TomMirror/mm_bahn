@@ -79,7 +79,7 @@ Zielbahnhof | "Siegburg/Bonn" |	The destination to search as String
 updateInterval | optional '60000' |	Update interval in milliseconds
 
 ## Screenshots
-![Screenshot](https://github.com/TomMirror/mm_bahn/screenshots/sample.png)
+![Screenshot](https://github.com/TomMirror/mm_bahn/blob/master/screenshots/sample.PNG)
   
 ## Licence
 MIT License
