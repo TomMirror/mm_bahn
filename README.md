@@ -46,9 +46,6 @@ As similar to other modules:
 - Execute npm intall mm_bahn
 - set your API-KEY at mm_bahn.js
 
-## Note
-- If there is an error during data retrieving process it will be shown in the console
-
 ## Configuration
 1.	minimum configuration within config.js:
 ```
