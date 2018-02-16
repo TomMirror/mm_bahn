@@ -326,7 +326,7 @@ Module.register("mm_bahn",{
 	scheduleUpdate: function(delay) {
 		var nextLoad = this.config.updateInterval;
 		if (typeof delay !== "undefined" && delay >= 0) {
-			nextLoad = 120000; // alt delay;
+			nextLoad = 1000; // alt delay;
 		}
 
 		var self = this;
