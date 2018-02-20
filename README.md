@@ -79,7 +79,7 @@ updateInterval | optional '60000' |	Update interval in milliseconds
 ## THANKS
 - [Michael Teeuw](https://github.com/MichMich) for the MagicMirror idea and inspiring me build a MagicMirror module.
 - [ct'](https://www.heise.de/ct) for the inspiration to use DB-Open-Data.
-- The community for the inspiration of various code-segments, which could be useful...
+- The community for the inspiration of various code-segments, which have been very useful...
   
 ## Licence
 MIT License
