@@ -80,6 +80,11 @@ updateInterval | optional '60000' |	Update interval in milliseconds
 
 ## Screenshots
 ![Screenshot](https://github.com/TomMirror/mm_bahn/blob/master/screenshots/sample.PNG)
+
+## THANKS
+- [Michael Teeuw](https://github.com/MichMich) for the MagicMirror idea and inspiring me build a MagicMirror module.
+- [ct'](https://www.heise.de/ct) for the inspiration to use DB-Open-Data.
+- The community for the inspiration of various code-segments, which could be useful...
   
 ## Licence
 MIT License
